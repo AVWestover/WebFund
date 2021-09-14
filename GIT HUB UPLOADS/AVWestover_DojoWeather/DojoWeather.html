@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--HEAD-->
+    <head>
+        <title>Profile</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="javasc.js" defer></script>
+    </head>
+    <!--BODY-->
+    <body>
+        <div id="surrounding">
+            <!--Top nav bar-->
+            <div id="nav-bar">
+                <h1 id="dojoweather">DojoWeather</h1>
+                <div id="citynames">
+                    <p class="cityname" onclick="loadalert(this)">Burbank</p>
+                    <p class="cityname" onclick="loadalert(this)">Chicago</p>
+                    <p class="cityname" onclick="loadalert(this)">Dallas</p>
+                </div>
+            </div>
+            <!--Center Column-->
+            <div id="centercolumn">
+                <!--SAN JOSE LINE-->
+                <div id="sanline">
+                    <h2 id="sanjose">San Jose</h2>
+                    <div id="tempcontrol">
+                        <p id="showtemp">Show temp in</p>
+                        <select id="select" onchange="converttemp(this)" name="tempform">
+                            <option value="°F">°F</option>
+                            <option value="°C">°C</option>
+                        </select>
+                    </div>
+                </div>
+                <!--WEATHER BOXES-->
+                <div id="weatherboxes">
+                    <!--TODAY-->
+                    <div class="daybox">
+                        <h2 class="daytitle">Today</h2>
+                        <img class="weatherpic" src="some_rain.png" alt="cloud with rain">
+                        <p class="weatherforday">some rain</p>
+                        <div class="temp">
+                            <p id="hightoday">75°</p>
+                            <p id="lowtoday">65°</p>
+                        </div>
+                    </div>
+                    <!--TOMORROW-->
+                    <div class="daybox">
+                        <h2 class="daytitle">Tomorrow</h2>
+                        <img class="weatherpic" src="some_sun.png" alt="sun">
+                        <p class="weatherforday">some sun</p>
+                        <div class="temp">
+                            <p id="hightomorrow">80°</p>
+                            <p id="lowtomorrow">66°</p>
+                        </div>
+                    </div>
+                    <!--FRIDAY-->
+                    <div class="daybox">
+                        <h2 class="daytitle">Friday</h2>
+                        <img class="weatherpic" src="some_clouds.png" alt="clouds">
+                        <p class="weatherforday">some clouds</p>
+                        <div class="temp">
+                            <p id="highfriday">69°</p>
+                            <p id="lowfriday">61°</p>
+                        </div>
+                    </div>
+                    <!--Saturday-->
+                    <div class="daybox">
+                        <h2 class="daytitle">Saturday</h2>
+                        <img class="weatherpic" src="some_sun.png" alt="sun">
+                        <p class="weatherforday">some sun</p>
+                        <div class="temp">
+                            <p id="highsaturday">78°</p>
+                            <p id="lowsaturday">70°</p>
+                        </div>
+                    </div>
+                </div>
+                <!--ALERT COOKIES-->
+                <div id="cookiealert">
+                    <div id="cookieleft">
+                        <img id="cookieimg" src="cookie.png" alt="cookie">
+                    </div>
+                    <div id="cookiecenter">
+                        <div id="alertheader">
+                            <h3 id="cookies">Stop! Cookie time</h3>
+                        </div>
+                        <div id="cookiedescbox">
+                            <p class="cookiedesc">We use cookies (sadly not the edible kind) to personalize</p>
+                            <p class="cookiedesc">content and ads, to provide social media features and to</p>
+                            <p class="cookiedesc">analyse our traffic. <span id="readmore">Read more...</span></p>
+                        </div>
+                    </div>
+                    <div id="cookieright">
+                        <button id="accept" onclick="acceptbt(this)">I Accept</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+<!--END-->
+</html>
