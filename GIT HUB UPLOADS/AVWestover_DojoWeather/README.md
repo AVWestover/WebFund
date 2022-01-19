@@ -1,3 +1,3 @@
-# Hello!
+# Web Fundamentals!
 
-This is my first project uploaded to GitHub!
+A few projects I did in the Web Fundamentals section of Coding Dojo.
