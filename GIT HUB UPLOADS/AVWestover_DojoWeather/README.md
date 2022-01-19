@@ -1,3 +1,3 @@
-# Web Fundamentals!
+# Dojo Weather!
 
-A few projects I did in the Web Fundamentals section of Coding Dojo.
+A project I did for the Web Fundamentals of Coding Dojo.
